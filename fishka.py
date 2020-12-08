@@ -1,14 +1,14 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Эта страница <h1>Домашняя!!!!!!!!!!!<h1>"
+    return render_template("index.html")
 
 @app.route("/bakha/")
 def hello_bakha():
-    return "ТЫ <h1>ЖБ) <h1>"
+    return render_template("bakha.html")
 
 @app.route("/<name>/")
 def hello_bye(name):
