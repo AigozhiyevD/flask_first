@@ -3,8 +3,70 @@
     <meta charset="utf-8">
     <title>Иония</title>
   </head>
+  <style>
+  .button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+ }
+
+ .button1 {background-color: #FFFFFF;} /* White */
+ .button2 {background-color: #000000;} /* White */
+ .button3 {background-color: #008CBA;} /* Blue */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+  body {
+    background-image: url('static/Home-Ionia_bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  </style>
   <body>
-    Эта страница
-    <h1>Домашняя!</h1>
-  </body>
+    <button class="button1">Эта страница</button>
+    <button class="button1"><h1>Домашняя!</h1></button>
+    <ul>
+      <li><a href="/bakha/">Ссылка на Баху</a></li>
+      <li><a href="/dad/">Ссылка на Папу</a></li>
+      <li><a href="/mom/">Ссылка на Маму</a></li>
+      <li><a href="/dimash/">Ссылка на Димаша</a></li>
+   </ul>
 </html>
